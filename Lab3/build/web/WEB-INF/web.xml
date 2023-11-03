@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="5.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <filter>
+        <filter-name>zliczaFilter</filter-name>
+        <filter-class>pai.servlets.zliczaFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>zliczaFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <servlet>
+        <servlet-name>SerwletSesja</servlet-name>
+        <servlet-class>SerwletSesja</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletMoneta</servlet-name>
+        <servlet-class>SerwletMoneta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletPierwszy</servlet-name>
+        <servlet-class>pai.servlets.SerwletPierwszy</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletDrugi</servlet-name>
+        <servlet-class>pai.servlets.SerwletDrugi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SerwletSesja</servlet-name>
+        <url-pattern>/SerwletSesja</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletMoneta</servlet-name>
+        <url-pattern>/SerwletMoneta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletPierwszy</servlet-name>
+        <url-pattern>/SerwletPierwszy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletDrugi</servlet-name>
+        <url-pattern>/SerwletDrugi</url-pattern>
+    </servlet-mapping>
+</web-app>
